@@ -9,6 +9,9 @@ filetype off
 let loaded_taglist = 'yes' "don't load excuberant ctags
 call pathogen#infect()
 
+"set <leader> key
+let mapleader=","
+
 "replace camelcase and underscore word navigation
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
@@ -22,9 +25,6 @@ omap <silent> ib <Plug>CamelCaseMotion_ib
 xmap <silent> ib <Plug>CamelCaseMotion_ib
 omap <silent> ie <Plug>CamelCaseMotion_ie
 xmap <silent> ie <Plug>CamelCaseMotion_ie
-
-"set <leader> key
-let mapleader=","
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -45,6 +45,12 @@ set hlsearch    "hilight searches by default
 set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
+
+"FuzzyFinder
+map ,f :FufFile **/<CR>
+
+"compile with F5
+autocmd! BufEnter *.{scss,sass} map <F5> <Esc>:w<CR>:!sass %:p --update<CR>
 
 "better grep
 set grepprg=ack-grep\ --sort-files\ -a
