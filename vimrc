@@ -50,7 +50,7 @@ set wrap linebreak nolist
 map ,f :FufFile **/<CR>
 
 "compile with F5
-autocmd! BufEnter *.{scss,sass} map <F5> <Esc>:w<CR>:!sass %:p --update<CR>
+autocmd! BufEnter *.{scss,sass} map <F5> <Esc>:w<CR>:!sass %:p --update<CR><CR>
 
 "better grep
 set grepprg=ack-grep\ --sort-files\ -a
