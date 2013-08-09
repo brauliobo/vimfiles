@@ -561,6 +561,9 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
+"remove current file
+nnoremap <leader>rm :call delete(expand('%')) \| bdelete!<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ruby test running and show
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
