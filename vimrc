@@ -53,7 +53,7 @@ map ,f :FufFile **/<CR>
 autocmd! BufEnter *.{scss,sass} map <F5> <Esc>:w<CR>:!sass %:p --update<CR><CR>
 
 "better grep
-set grepprg=ack-grep\ --sort-files\ -a
+set grepprg=ack-grep
 
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
