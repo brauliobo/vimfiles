@@ -307,6 +307,9 @@ silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
+"save shortcut
+nnoremap <leader>w :wa<CR>
+
 "map to bufexplorer
 nnoremap <leader>b :BufExplorer<cr>
 "map to bufergator
