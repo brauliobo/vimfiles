@@ -13,7 +13,7 @@ call pathogen#infect()
 let mapleader=","
 
 "file navigation with tab
-nnoremap <tab> :b#<CR>
+nnoremap <C-tab> :b#<CR>
 
 "replace camelcase and underscore word navigation
 map <silent> w <Plug>CamelCaseMotion_w
