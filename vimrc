@@ -12,6 +12,9 @@ call pathogen#infect()
 "set <leader> key
 let mapleader=","
 
+" allow big pattern match
+set maxmempattern=20000
+
 "file navigation with tab
 nnoremap <C-tab> :b#<CR>
 
