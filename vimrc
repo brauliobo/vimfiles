@@ -49,6 +49,9 @@ set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
 set number      "add line numbers
+"toggle line number
+nmap <f3> :set number! number?<cr>
+
 set showbreak=...
 set wrap linebreak nolist
 
@@ -490,6 +493,8 @@ map <leader>yy "+yy
 map <leader>pp "+pp
 vnoremap <leader>y "+y
 vnoremap <leader>p "+p
+
+set pastetoggle=<F2>
 
 "shortcut to go to the begginning of line
 nmap 0 ^	
