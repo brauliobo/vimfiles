@@ -434,7 +434,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 " automatic removal based on filetypes (from http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace)
-autocmd BufWritePre *.{rb,erb,slim,rhtml,rake,c,cpp,h,sh,js,css,scss,sass,less,po} :%s/\s\+$//e
+autocmd BufWritePre *.{rb,erb,slim,rhtml,rake,c,cpp,h,sh,js,css,scss,sass,less,po,yml,json} :%s/\s\+$//e
 "autocmd FileType c,cpp,ruby,java,php,perl autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 "find nearest
