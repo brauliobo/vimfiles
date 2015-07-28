@@ -220,3 +220,6 @@
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/rubocop"]
+	path = bundle/rubocop
+	url = https://github.com/ngmy/vim-rubocop.git

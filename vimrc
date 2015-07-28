@@ -332,6 +332,10 @@ let g:buffergator_autoexpand_on_split = 0
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
 
+"RuboCop
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+
 "map Q to something useful
 noremap Q gq
 
