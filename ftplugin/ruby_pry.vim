@@ -11,7 +11,7 @@ map <Leader>bp orequire'pry';binding.pry<esc>:w<cr>
 map <Leader><Leader>p <Leader>bp
 
 " Keep pry from annoyingly hanging around when using, e.g. pry-rescue/minitest
-map <f3> :wa<cr>:call system('kill-pry-rescue')<cr>
+" map <f3> :wa<cr>:call system('kill-pry-rescue')<cr>
 
 " Nab lines from ~/.pry_history (respects "count")
 nmap <Leader>ph :<c-u>let pc = (v:count1 ? v:count1 : 1)<cr>:read !tail -<c-r>=pc<cr> ~/.pry_history<cr>:.-<c-r>=pc-1<cr>:norm <c-r>=pc<cr>==<cr>
